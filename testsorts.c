@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "testsorts.c"
+#include "testsorts.h"
 using namespace std;
 void testInsertionSorts() {
         
