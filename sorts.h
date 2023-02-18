@@ -1,8 +1,9 @@
+#ifndef SORTS_H
+#define SORTS_H
 #include <iostream>
 #include <cstring>
 using namespace std;
-#ifndef SORTS_H
-#define SORTS_H
+#include "arraywork.h"
 void mergeSort(int* ar, int size);//1
 void insertionSort(int* ar,int  size);//2
 void bubbleSort(int* ar,int size);//3
