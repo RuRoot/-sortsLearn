@@ -1,14 +1,14 @@
 #include <iostream>
+#include <chrono>
+
 #include "arraywork.h"
 #include "sorts.h"
-#include<chrono>
-
-
 
 using namespace std;
 
-
-
+//функция очень монстровидная....
+её можно разбить на много маленьких функций....
+помним правило одна функция решает одну задачу....
 int main ()
 {
   
@@ -17,9 +17,12 @@ int main ()
   int stopi = 500;
   
   
+//код плохо форматирован.....
   for( int starti = 100;    starti <= stopi;   starti = buff + starti){//starti- начало шага  stopi-конец шага    buff-шаг 
   
-  
+//  почему бы вот эти все if else if else не поместить в одну функцию?? 
+//которая бы вернула новый шаг изменения массива
+
             if(starti == 500){
                 buff = 100;
                 stopi = 1000;
@@ -49,7 +52,7 @@ int main ()
                 stopi = 10000000;
             }
             else if(starti > 10000000){break;}
-            
+          
       
       
              int *ar = new int[starti];//динамически выделили память для массива
@@ -57,7 +60,7 @@ int main ()
       
       
              cout<<starti<<"\t";//вывод размера массива в консоль
-             for (int i = -1;i < 5;i++){
+             for (int i = -1;i < 5;i++){ почему здеь i = -1?:;
             
       
              randomFilling(ar,starti,0,999);//заполнили массив произвольными значениями
@@ -66,15 +69,17 @@ int main ()
       
             switch(i){//выбор сортировок
                 case 0:
-                     if(bol[i] != 0){mergeSort(ar, starti);}
-                     
-                
-                       break;
+                   	if(bol[i] != 0){
+				mergeSort(ar, starti);
+			}
+                break;
                 
                 case 1:
-                if(bol[i] != 0){insertionSort(ar,starti);}
+                	if(bol[i] != 0){
+				insertionSort(ar,starti);
+			}
                 
-                       break;
+                break;
                        
                 case 2:
                 if(bol[i] != 0){bubbleSort(ar,starti);}
