@@ -4,20 +4,20 @@
 using namespace std;
 void testInsertionSorts() {
         
-		int ar[] = {9,8,7,6,5,4,3,2,1};
-		int etalonAr[] = {9,8,7,6,5,4,3,2,1};
-		insertionSort(ar, 9);
-		bool ok = true;
-		for (int i = 0; i < 9; i++) {
-			if (etalonAr[i] != ar[i]) {
-                                cout << "insertionSort FAILED" << endl;
-				ok = false;
-				break;
-			}
+	int ar[] = {9,8,7,6,5,4,3,2,1};
+	int etalonAr[] = {9,8,7,6,5,4,3,2,1};
+	insertionSort(ar, 9);
+	bool ok = true;
+	for (int i = 0; i < 9; i++) {
+		if (etalonAr[i] != ar[i]) {
+        	        cout << "insertionSort FAILED" << endl;
+			ok = false;
+			break;
 		}
-		if (ok == true) {
-                        cout << "insertionSort is OK" << endl;
-		}
+	}
+	if (ok == true) {
+        	cout << "insertionSort is OK" << endl;
+	}
 
 	
 }
